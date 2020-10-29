@@ -1,1 +1,1 @@
-web: ENV_SILENT=true adnois serve
+web: ENV_SILENT=true npm start
