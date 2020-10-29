@@ -1,14 +1,13 @@
 "use strict";
 
-const Env = use("Env");
 const Client = require("coinbase").Client;
 
 class ShowTransactionController {
   async index({ request, response }) {
-    var apiKey = Env.get(request.all().app.toUpperCase() + "_COINBASE_API_KEY");
-    var apiSecret = Env.get(
-      request.all().app.toUpperCase() + "_COINBASE_API_SECRET"
-    );
+    var apiKey =
+      process.env[request.all().app.toUpperCase() + "_COINBASE_API_KEY"];
+    var apiSecret =
+      process.env[request.all().app.toUpperCase() + "_COINBASE_API_SECRET"];
 
     var client = new Client({ apiKey, apiSecret, strictSSL: false });
 
