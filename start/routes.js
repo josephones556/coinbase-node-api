@@ -23,3 +23,4 @@ Route.get("/", () => {
 Route.post("/create/address", "CreateAddressController.index");
 Route.post("/create/transaction", "CreateTransactionController.index");
 Route.post("/show/transaction", "ShowTransactionController.index");
+Route.post("/accounts", "AccountController.index");

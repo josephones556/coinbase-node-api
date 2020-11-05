@@ -26,6 +26,7 @@
     "@adonisjs/lucid": "^6.1.3",
     "@adonisjs/validator": "^5.0.6",
     "coinbase": "^2.0.8",
+    "collect.js": "^4.28.4",
     "indicative": "^7.4.4",
     "url-parse": "^1.4.7"
   },
