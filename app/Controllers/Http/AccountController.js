@@ -15,6 +15,7 @@ class AccountController {
     if (validation.fails()) {
       return response.status(400).json(validation.messages()[0]);
     }
+    //
     var apiKey =
       process.env[request.all().app.toUpperCase() + "_COINBASE_API_KEY"];
     var apiSecret =
